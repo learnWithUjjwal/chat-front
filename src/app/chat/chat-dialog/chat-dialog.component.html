@@ -1,0 +1,29 @@
+<button (click)="showBot()" id="botbtn">Appointer Bot	</button>
+<div id="bot">	
+<div id="header">	
+<h1 align="center">
+	Appointer Bot
+<span (click)="hideBot()" id="close"> Close	</span>
+
+</h1>
+
+
+
+</div>
+
+<ng-container *ngFor="let message of messages | async">
+	<div class="message" [ngClass] = "{'from': message.sentBy === 'bot', 'to': message.sentBy === 'user'}">
+
+	{{ message.content }}
+		
+	</div>
+	
+	
+</ng-container>
+<div class="chat">
+
+<input placeholder="Send Message" [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
+
+<button (click)="sendMessage()">Send</button>
+</div>
+</div>

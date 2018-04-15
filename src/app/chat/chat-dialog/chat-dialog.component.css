@@ -1,0 +1,62 @@
+h1{
+	display:block;
+	margin:0 auto;
+}
+#bot{
+		display:none;
+		width:40%;
+		height:50%;
+		border:2px solid lightblue;
+		z-index:2000;
+		position:fixed;
+		bottom:0;
+		right:0;
+		overflow:auto;
+		border-radius: 10px;
+
+	}
+
+.from{
+	position: relative;
+	left:0;
+	clear: both;
+	padding:5px;
+	overflow:   auto;
+        bottom:     0;
+        max-height: 400px;
+
+	}
+
+	.to{
+		overflow:   auto;
+        bottom:     0;
+        max-height: 400px;
+	position: relative;
+	float:right;
+	padding:5px;
+	clear:both;
+	}
+
+	.chat{
+		width:100%;
+		position: absolute;
+		bottom:0 !important;
+	}
+
+	.chat input{
+		width:80%;
+	}
+
+	#botbtn{
+		z-index:2000;
+		position:absolute;
+		bottom:0;
+		right:0;
+	}
+
+	#close{
+		float:right;
+	}
+#header{
+	width:100%;
+}
